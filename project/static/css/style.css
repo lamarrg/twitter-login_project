@@ -1,0 +1,19 @@
+body {
+
+}
+
+.list-group {
+    margin-top: 30px;
+}
+
+.pos{
+    background-color: green;
+}
+
+.neutral {
+    background-color: yellow;
+}
+
+.neg {
+    background-color: red;
+}
