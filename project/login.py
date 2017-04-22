@@ -1,9 +1,11 @@
 from user import User
 from database import Database
 from twitter_utils import get_request_token, get_oauth_verifier, get_access_token
+import hidden_constants
 
+# Database.initialise(user="postgres", password="$erenity9", host="localhost", database="learning")
 
-Database.initialise(user="postgres", password="$erenity9", host="localhost", database="learning")
+# Database.initialise(host=hidden_constants.hidden_host, database=hidden_constants.hidden_database, user=hidden_constants.hidden_user, password=hidden_constants.hidden_password)
 
 user_email = input("Enter your email address: ")
 

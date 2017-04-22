@@ -4,11 +4,15 @@ from user import User
 from database import Database
 import json
 import requests
+import hidden_constants
+
 
 app = Flask(__name__)
 app.secret_key = '1234'  #required so cookie can be encrypted
 
-Database.initialise(host='localhost', database='learning', user='postgres', password='$erenity9')
+# Database.initialise(host='localhost', database='learning', user='postgres', password='$erenity9')
+
+Database.initialise(host=hidden_constants.hidden_host, database=hidden_constants.hidden_database, user=hidden_constants.hidden_user, password=hidden_constants.hidden_password)
 
 @app.before_request
 def load_user():
@@ -73,5 +77,5 @@ def search():
     return render_template('search.html', content=tweet_texts)
 
 
-
-app.run(port=4995, debug=True)
+# app.run(port=4995, debug=True)
+app.run(port=4995)
