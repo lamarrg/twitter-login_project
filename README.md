@@ -8,6 +8,8 @@ It includes examples of...
 * Twitter API
 * Flask
 * Bootstrap
+* Git
+* PyCharm
 
 I still plan in doing a few modifications to make it more my own.
 
